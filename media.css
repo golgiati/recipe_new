@@ -1,0 +1,47 @@
+@media(min-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+
+    nav .menu {
+        clear: none;
+        max-height: none;
+        display: flex;
+        justify-content:space-between;
+        padding-top: 98px;
+    }
+
+    nav .menu li a {
+        flex-direction: column;
+    }
+
+    /* hide the burger */
+    nav .menu-icon {
+        display: none;
+    }
+
+    [href="#avatar"] {
+        height: 98px;
+    }
+
+    [href="#home"] {
+        top: 0;
+        left: 0;
+        height: 98px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EB5428;
+    }
+
+    #search {
+        position: absolute;
+        z-index: 4;
+        margin-left: 350px;
+    }
+
+    header h1 {
+        padding: 20px 0 20px 20px;
+        text-align: left;
+    }
+}

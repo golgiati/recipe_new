@@ -46,10 +46,15 @@ nav .menu {
     transition: max-height .2s ease-out;
 }
 
-nav .menu li a img {
+nav .menu li a .food-small-picture {
     height: 50px;
     width: 50px;
     margin-right: 10px;
+}
+
+nav .menu li a .svg-image {
+    height: 50px;
+    width: 50px;
 }
   
 /* menu icon */
