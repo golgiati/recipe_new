@@ -8,10 +8,8 @@ nav h2 {
 }
 
 nav {
-    background-color: #F2F2F2;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: relative;
-    width: 100%;
     z-index: 3;
     background-color: #EB5428;
 }
