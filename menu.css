@@ -1,0 +1,107 @@
+/* nav menu */
+nav {
+    grid-row: 1 / 2;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav {
+    background-color: #F2F2F2;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    background-color: #EB5428;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+  
+nav li a {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #EB5428;
+}
+  
+nav li a:hover,
+nav .menu-btn:hover {
+    background-color: #EB5428;
+    color: #F2F2F2;
+}
+  
+/* menu */
+nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+nav .menu li a img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+  
+/* menu icon */
+nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    user-select: none;
+    background-color: #F2F2F2;
+}
+
+nav .hamburger-menu {
+    text-align: center;
+    padding-top: 5px;
+}
+  
+/* menu btn */
+nav .menu-btn {
+    display: none;
+}
+  
+nav .menu-btn:checked ~ .menu {
+    max-height: 700px;
+}
+
+/* style logo */
+[href="#home"] {
+    position: absolute;
+    top: 12px;
+    left: 170px;
+}
+
+/* style avatar */
+[href="#avatar"] {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    height: 98px;
+    width: 80px;
+    background-color: #F2F2F2;
+    color:#000;
+}
+
+nav .menu .avatar img {
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+nav .menu .avatar a:hover {
+    background-color: #F2F2F2;
+    color: #000;
+}

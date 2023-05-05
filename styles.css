@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 414px;
+    margin: 0 auto;
+    background-color: rgba(122, 191, 191, .5);
+}
+
+header,
+main,
+nav,
+aside,
+footer {
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, h4, nav a, nav span, menu li, #connect li, footer, .hamburger-menu p {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a, nav span, menu li, #connect li, footer, .hamburger-menu p {
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* search box */
+#search {
+    grid-row: 2 / 3;
+    padding: 30px 0;
+}
+
+#search h2 {
+    display: none;
+}
+
+#search form {
+    display: flex;
+    justify-content: center;
+}
+
+#search input {
+    height: 35px;
+    width: 250px;
+    border: #EB5428 2px solid;
+    outline: none;
+}
+
+#search input:focus {
+    border: 3px solid #eb5428;
+}
+
+#search button {
+    border: none;
+}
+
+/* header */
+header {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 2fr;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+header menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+header menu li {
+    list-style: none;
+}
+
+header menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+header menu li a svg:hover {
+    transform: translate(0px, -7px) scale(1.4, 1.4);
+    transition: .2s ease-out;
+}
+
+#header-description p {
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* main */
+main {
+    grid-row: 4 / 5;
+    display: grid;
+}
+
+#details,
+#ingredients,
+#directions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#details h2 {
+    text-align: center;
+}
+
+#details dl {
+    display: flex;
+    justify-content: center;
+    font-family: 'Monserrat', sans-serif;
+    line-height: 1.5rem;
+}
+
+#details dt {
+    padding-right: 10px;
+}
+
+#details dl dt {
+    font-weight: bold;
+}
+
+#ingredients h2 {
+    text-align: center;
+}
+
+#ingredients ul {
+    padding-left: 30px;
+}
+
+#ingredients ul li {
+    font-family: 'Monserrat', sans-serif;
+    line-height: 2rem;
+}
+
+#directions h2 {
+    text-align: center;
+}
+
+#directions ol {
+    padding: 0 10px 0 30px;
+}
+
+#directions ol li {
+    font-family: 'Monserrat', sans-serif;
+    line-height: 1.5rem;
+    padding-left: 10px;
+}
+
+#side-dishes {
+    background-color: #7ABFBF;
+}
+
+#side-dishes h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#side-dishes ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#side-dishes ul li a {
+    display: flex;
+    padding: 10px 0 10px 10px;
+    text-decoration: none;
+}
+
+#side-dishes .side-dish-description p:nth-child(3) {
+    font-weight: bold;
+}
+
+#side-dishes ul li a:visited {
+    color: #000;
+}
+
+#side-dishes ul li a:hover {
+    background-color: #EB5428;
+}
+
+#side-dishes ul li a .side-dish-picture {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+#side-dishes ul li a p {
+    font-family: 'Monserrat', sans-serif;
+}
+
+#side-dishes .side-dish-description .star {
+    height: 20px;
+    width: 20px;
+}
+
+/* social media */
+#connect {
+    grid-row: 5 / 6;
+    padding: 30px 0;
+}
+
+#connect menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#connect menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+#connect menu li a svg:hover {
+    transform: translate(0px, -7px) scale(1.4, 1.4);
+    transition: .2s ease-out;
+}
+
+#connect h2, #connect h3 {
+    display: none;
+}
+
+/* footer */
+footer {
+    grid-row: 6 / 7;
+    text-align: center;
+}
+
+footer h2 {
+    display: none;
+}
+
+footer img {
+    height: 200px;
+    width: 200px;
+}
