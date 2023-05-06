@@ -199,14 +199,11 @@ main {
     display: flex;
     padding: 10px 0 10px 10px;
     text-decoration: none;
+    color: #000;
 }
 
 #side-dishes .side-dish-description p:nth-child(3) {
     font-weight: bold;
-}
-
-main #side-dishes ul li a:visited {
-    color: #000;
 }
 
 #side-dishes ul li a:hover {
